@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 7</title>
+	<style type="text/css">
+		#canv {
+			width: 1000px;
+			height: 800px;
+			border: 1px solid black
+		}
+	</style>
+	<script src="script.js" defer></script>
+</head>
+<body onload="time()"> <!--Не знаю почему, но без onload часы не работают-->
+<div class="head"><h1 id="date"></h1></div>
+	<div class="canv">
+		<canvas id="canv" width="1000" height="800"></canvas>
+	</div>
+	<div class="tools">
+		<div class="coordinates">
+			<p id="x"><b>x: </b> <span id="xCoord"></span></p>
+			<p id="y"><b>y: </b> <span id="yCoord"></span></p>
+			<br>
+			<button class="toolButton" id='brush'>Brush</button>
+			<button class="toolButton" id='line'>Line</button>
+			<button class="toolButton" id='rectangle'>Rectangle</button>
+			<button id='del'>Очистить поле</button>
+			<select id='sizeSelect'>
+				<option>5</option>
+				<option>10</option>
+				<option>15</option>
+				<option>20</option>
+			</select>
+			<input type="color" id="color">
+			<br><br>
+			<input type="text" id="wid" placeholder="Ширина прямоугольника">
+			<input type="text" id="hei" placeholder="Высота прямоугольника">
+		</div>
+	</div>
+</body>
+</html>
